@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+  background: #303443;
+  margin: 10px 0;
+}
+
+.previewWrap,
+.editorWrap textarea {
+  background-color: #303443;
+  border: 1px solid #303443;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  border-top: none;
+  border-radius: 10px;
+}
+
+.editorWrap {
+  max-width: 800px;
+  margin: 1.125rem auto;
+}
+
+.editorWrap textarea {
+  width: 99%;
+  min-height: 200px;
+  margin-bottom: -5px;
+  resize: vertical;
+  outline: none;
+  padding-left: 15px;
+  padding-top: 15px;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.previewWrap {
+  max-width: 800px;
+  margin: 1.25rem auto;
+  min-height: 200px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 850px) {
+  .previewWrap {
+    max-width: 630px;
+  }
+
+  .editorWrap {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    margin: 5px 0;
+  }
+
+  .editorWrap {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .previewWrap {
+    width: 90vw;
+  }
+}
+#preview {
+  padding: 0 1rem;
+}
+#preview blockquote {
+  border-left: 3px solid hsl(227, 17%, 55%);
+  color: hsl(227, 17%, 55%);
+  padding-left: 5px;
+  margin-left: 25px;
+}
+#preview > p > code {
+  padding: 3px;
+}
+#preview code {
+  background: black;
+  color: greenyellow;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#preview pre {
+  display: block;
+  overflow: auto;
+  background: black;
+  padding: 5px;
+  line-height: 1.2;
+}
+#preview h1 {
+  border-bottom: 2px solid hsl(227, 17%, 55%);
+}
+#preview h2 {
+  border-bottom: 1px solid hsl(227, 17%, 55%);
+}
+#preview table {
+  border-collapse: collapse;
+}
+#preview td,
+#preview th {
+  border: 2px solid hsl(227, 17%, 55%);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+#preview a {
+  color: #c2adf7;
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-64px {
+  margin-bottom: 64px;
+}
+
+.underline {
+  text-decoration: underline;
+}
